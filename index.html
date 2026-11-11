@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auth0 Login Demo</title>
+  </head>
+  <body>
+    <main class="card">
+      <p id="status" class="status">Checking your session…</p>
+      <p id="error" class="error" hidden></p>
+
+      <section id="logged-out" hidden>
+        <h1>Sign in</h1>
+        <p class="lede">
+          Use Auth0 Universal Login to see the name, email, and picture on your profile.
+        </p>
+        <button id="login" type="button">Log in</button>
+      </section>
+
+      <section id="logged-in" hidden>
+        <h1>Your profile</h1>
+        <img id="picture" class="avatar" alt="" width="96" height="96" hidden />
+        <p id="name" class="name"></p>
+        <p id="email" class="email"></p>
+        <button id="logout" type="button">Log out</button>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
